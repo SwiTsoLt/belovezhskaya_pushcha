@@ -1,10 +1,12 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html, body {width: 100%;}
+html, body {
+    width: 100%;
+}
 
 body {
     font-family: sans-serif;
@@ -22,16 +24,26 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    filter: brightness(0.4);
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.3);
     z-index: -1;
 }
 
 .container-center {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 60%;
+    height: fit-content;
+    margin: 0 auto;
 }
 
 header {
@@ -42,41 +54,83 @@ header {
     overflow: hidden;
 }
 
+header > .wrapper > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    height: 100vh;
+    padding: 0;
+}
+
+header > .wrapper > .text > h1 {
+    line-height: normal;
+    font-size: 4.4em;
+}
+
 .header-bg {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url("https://lh3.googleusercontent.com/p/AF1QipPV8wf-HdenVOuoQHZvgXx5TBvK4emojsUSRkCP=s680-w680-h510");
+    background-image: url("https://lp-cms-production.imgix.net/2019-06/2644f5a133e7432cd0fbaad4e5a645b5-belavezhskaya-pushcha-national-park.jpg");
 }
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+main {
+    position: relative;
     width: 100%;
-    height: 100%;
-    min-height: 20vh;
+    height: fit-content;
 }
 
-.title>h1 {
-    font-size: 2rem;
-}
-
-.about {
+section {
     position: sticky;
-    top: 100vh;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100vh;
+}
+
+.text {
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+.s1 {
+    top: 0;
     z-index: 2;
 }
 
-.about>.bg {
-    width: 100%;
-    height: 100%;
-    background-image: url("https://minsknews.by/wp-content/uploads/2021/02/02_20201011_DMI_RIG_TSU_9-800x526.jpg");
+.s1>.bg {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4b/Bialowieza_National_Park_in_Poland0029.JPG");
 }
 
-p {
-    padding: 30px;
-    text-align: justify;
+.s2 {
+    top: 0;
+    z-index: 3;
+}
+
+.s2>.bg {
+    background-image: url("https://www.mustseespots.com/belarus/img/belovezhskaya-pushcha-national-park-1.jpg");
+}
+
+.s3 {
+    top: 0;
+    z-index: 4;
+}
+
+.s3>.bg {
+    background-image: url("https://domik-v-pusche.by/wp-content/uploads/2014/05/dom-2-037.jpg");
+}
+
+.s4 {
+    top: 0;
+    z-index: 5;
+}
+
+.s4>.bg {
+    background-image: url("https://cdnn11.img.sputnik.by/img/102928/72/1029287296_0:85:1680:1034_1920x0_80_0_0_3af6d0c7b3877a51f2350203d1e7e137.jpg");
+    background-size: 140%;
+    background-position: bottom;
 }
