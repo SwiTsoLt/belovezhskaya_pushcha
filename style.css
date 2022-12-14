@@ -34,14 +34,14 @@ body {
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    width: 800px;
+    width: 840px;
     height: 100%;
     margin: 0 auto;
 }
 
 .wrapper {
     width: 100%;
-    max-width: 800px;
+    max-width: 840px;
     height: fit-content;
     margin: 0 auto;
 }
