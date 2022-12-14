@@ -32,16 +32,15 @@ body {
 
 .container-center {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    width: 840px;
+    width: 850px;
     height: 100%;
     margin: 0 auto;
 }
 
 .wrapper {
     width: 100%;
-    max-width: 840px;
+    max-width: 850px;
     height: fit-content;
     margin: 0 auto;
 }
@@ -131,6 +130,4 @@ section {
 
 .s4>.bg {
     background-image: url("https://cdnn11.img.sputnik.by/img/102928/72/1029287296_0:85:1680:1034_1920x0_80_0_0_3af6d0c7b3877a51f2350203d1e7e137.jpg");
-    background-size: 140%;
-    background-position: bottom;
 }
