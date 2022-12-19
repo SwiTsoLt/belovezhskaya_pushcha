@@ -31,10 +31,10 @@ body {
 .loader_text {
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 10%;
     transform: translateX(-50%);
     width: 50%;
-    height: 10%;
+    height: 200px;
     background-image: url("./images/loader-text.gif");
     z-index: 2;
 }
